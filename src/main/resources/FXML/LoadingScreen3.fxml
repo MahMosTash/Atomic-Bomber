@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.loading_screens.LoadingScreen3Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/LoadingScreen3.jpg" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="progressBar" layoutX="-2.0" layoutY="488.0" prefHeight="38.0" prefWidth="803.0" progress="0.0" />
+      <Text fill="#f0a500" layoutX="509.0" layoutY="76.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="2.5" text="Please Wait...">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

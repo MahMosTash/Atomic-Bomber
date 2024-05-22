@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.menus.MainMenuController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/MainMenu.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="30.0" layoutX="63.0" layoutY="32.0" stroke="BLACK" strokeType="INSIDE" width="185.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="126.0" layoutX="63.0" layoutY="58.0" stroke="BLACK" strokeType="INSIDE" width="185.0" />
+      <ImageView fx:id="avatar" fitHeight="118.0" fitWidth="177.0" layoutX="67.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="username" fill="WHITE" layoutX="63.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="185.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <VBox layoutX="63.0" layoutY="198.0" prefHeight="219.0" prefWidth="185.0" spacing="15.0">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#start" prefHeight="26.0" prefWidth="191.0" text="Start New Game" />
+            <Button mnemonicParsing="false" onMouseClicked="#continueToPlay" prefHeight="26.0" prefWidth="201.0" text="Continue To Play" />
+            <Button mnemonicParsing="false" onMouseClicked="#goToProfileMenu" prefHeight="26.0" prefWidth="199.0" text="Go To Profile Menu" />
+            <Button mnemonicParsing="false" onMouseClicked="#leaderboard" prefHeight="26.0" prefWidth="214.0" text="Leaderboard" />
+            <Button mnemonicParsing="false" onMouseClicked="#settings" prefHeight="26.0" prefWidth="197.0" text="Settings" />
+            <Button mnemonicParsing="false" onMouseClicked="#exit" prefHeight="26.0" prefWidth="240.0" text="Exit" />
+         </children>
+      </VBox>
+   </children>
+</Pane>
