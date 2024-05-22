@@ -330,7 +330,6 @@ public class GameLauncher extends Application {
                     GameController.Freeze(game, pane, timeline);
                 }
             }
-            // TODO H
         });
         airplane.setOnKeyReleased(event -> {
             airplane.requestFocus();
